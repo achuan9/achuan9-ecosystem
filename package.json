@@ -1,0 +1,29 @@
+{
+  "name": "achuan9-ecosystem-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "release": "tsx scripts/release.ts",
+    "publish": "tsx scripts/publish.ts",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,md}\"",
+    "typecheck": "tsc --noEmit",
+    "dev:use-load-deps": "pnpm --filter @achuan9/use-load-deps dev",
+    "dev:playgrounds": "pnpm --filter @achuan9/playgrounds dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vue-eslint-parser": "^9.4.2",
+    "vite": "^5.1.4"
+  }
+}
