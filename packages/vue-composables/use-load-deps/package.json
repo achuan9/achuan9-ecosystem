@@ -37,12 +37,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/achuan9/use-load-deps"
+    "url": "https://github.com/achuan9/achuan9-ecosystem/blob/master/packages/vue-composables/use-load-deps"
   },
   "bugs": {
-    "url": "https://github.com/achuan9/use-load-deps/issues"
+    "url": "https://github.com/achuan9/achuan9-ecosystem/blob/master/packages/vue-composables/use-load-deps/issues"
   },
-  "homepage": "https://github.com/achuan9/use-load-deps#readme",
+  "homepage": "https://github.com/achuan9/achuan9-ecosystem/blob/master/packages/vue-composables/use-load-deps#readme",
   "peerDependencies": {
     "vue": "^3.0.0"
   },
