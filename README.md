@@ -1,59 +1,98 @@
-<p align="center">
-  <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://vite.dev/logo.svg" alt="Vite logo">
-  </a>
-</p>
-<br/>
-<p align="center">
-  <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
-  <a href="https://nodejs.org/en/about/previous-releases"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a>
-  <a href="https://github.com/vitejs/vite/actions/workflows/ci.yml"><img src="https://github.com/vitejs/vite/actions/workflows/ci.yml/badge.svg?branch=main" alt="build status"></a>
-  <a href="https://pr.new/vitejs/vite"><img src="https://developer.stackblitz.com/img/start_pr_dark_small.svg" alt="Start new PR in StackBlitz Codeflow"></a>
-  <a href="https://chat.vite.dev"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a>
-</p>
-<br/>
-
-# Vite ⚡
-
-> Next Generation Frontend Tooling
-
-- 💡 Instant Server Start
-- ⚡️ Lightning Fast HMR
-- 🛠️ Rich Features
-- 📦 Optimized Build
-- 🔩 Universal Plugin Interface
-- 🔑 Fully Typed APIs
-
-Vite (French word for "quick", pronounced [`/vit/`](https://cdn.jsdelivr.net/gh/vitejs/vite@main/docs/public/vite.mp3), like "veet") is a new breed of frontend build tooling that significantly improves the frontend development experience. It consists of two major parts:
-
-- A dev server that serves your source files over [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), with [rich built-in features](https://vite.dev/guide/features.html) and astonishingly fast [Hot Module Replacement (HMR)](https://vite.dev/guide/features.html#hot-module-replacement).
-
-- A [build command](https://vite.dev/guide/build.html) that bundles your code with [Rollup](https://rollupjs.org), pre-configured to output highly optimized static assets for production.
-
-In addition, Vite is highly extensible via its [Plugin API](https://vite.dev/guide/api-plugin.html) and [JavaScript API](https://vite.dev/guide/api-javascript.html) with full typing support.
-
-[Read the Docs to Learn More](https://vite.dev).
-
-## Packages
-
-| Package                                         | Version (click for changelogs)                                                                                                    |
-| ----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| [vite](packages/vite)                           | [![vite version](https://img.shields.io/npm/v/vite.svg?label=%20)](packages/vite/CHANGELOG.md)                                    |
-| [@vitejs/plugin-legacy](packages/plugin-legacy) | [![plugin-legacy version](https://img.shields.io/npm/v/@vitejs/plugin-legacy.svg?label=%20)](packages/plugin-legacy/CHANGELOG.md) |
-| [create-vite](packages/create-vite)             | [![create-vite version](https://img.shields.io/npm/v/create-vite.svg?label=%20)](packages/create-vite/CHANGELOG.md)               |
-
-## Contribution
-
-See [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[MIT](LICENSE).
-
-## Sponsors
+# Achuan9 Ecosystem
 
 <p align="center">
-  <a target="_blank" href="https://github.com/sponsors/yyx990803">
-    <img alt="sponsors" src="https://sponsors.vuejs.org/vite.svg?v2">
-  </a>
+  <img src="https://img.shields.io/badge/vue-3.4.21-brightgreen" alt="Vue">
+  <img src="https://img.shields.io/badge/typescript-5.3.3-blue" alt="TypeScript">
+  <img src="https://img.shields.io/badge/vite-5.1.4-purple" alt="Vite">
+  <img src="https://img.shields.io/badge/pnpm-workspace-orange" alt="PNPM Workspace">
 </p>
+
+<p align="center">
+  <b>Achuan9 的前端生态工具集</b>
+</p>
+
+## 📦 项目结构
+
+这是一个基于 PNPM Workspace 的 monorepo 项目，包含以下模块：
+
+### Vue Composables
+
+- [@achuan9/use-load-deps](./packages/vue-composables/use-load-deps) - 用于处理依赖加载的 Vue 组合式函数
+
+### Vite Plugins
+
+- [@achuan9/vite-plugin-version-log](./packages/vite-plugins/vite-plugin-version-log) - 一个用于在生产环境构建时注入版本信息的 Vite 插件。
+
+## 🚀 快速开始
+
+### 环境要求
+
+- Node.js >=22.12.0 || ^20.19.0
+- pnpm@10.11.0
+
+### 安装
+
+```bash
+# 克隆项目
+git clone https://github.com/achuan9/achuan9-ecosystem.git
+
+# 进入项目目录
+cd achuan9-ecosystem
+
+# 安装依赖
+pnpm install
+```
+
+### 开发
+
+```bash
+# 运行 @achuan9/use-load-deps 的示例
+cd playground/use-load-deps && pnpm dev
+
+
+# 运行 @achuan9/vite-plugin-version-log 的示例
+cd playground/vite-plugin-version-log && pnpm dev
+```
+
+### 构建
+
+```bash
+# 构建所有包
+pnpm build
+
+# 发版
+pnpm release
+
+# 发布到npm
+pnpm pub @achuan9/vite-plugin-version-log@1.0.0
+```
+
+## 📝 开发指南
+
+### 提交规范
+
+我们使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范进行提交：
+
+```bash
+# 示例
+feat: add new feature
+fix: fix bug
+docs: update documentation
+style: format code
+refactor: refactor code
+test: add tests
+chore: update dependencies
+```
+
+## 🤝 贡献指南
+
+欢迎提交 Pull Request 或创建 Issue。在提交 PR 之前，请确保：
+
+1. 代码已经通过 ESLint 检查
+2. 代码已经通过 TypeScript 类型检查
+3. 添加了必要的测试
+4. 更新了相关文档
+
+## 📄 开源协议
+
+[MIT](./LICENSE) © Achuan9
