@@ -1,6 +1,6 @@
 {
   "name": "@achuan9/use-load-deps",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Vue 3 composable for loading external dependencies",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

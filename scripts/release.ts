@@ -22,8 +22,8 @@ release({
       '.',
     ]
     changelogArgs.push('--lerna-package', pkgName)
-    await run('npx', changelogArgs, { cwd: `packages/${pkgName}` })
     const pkgDir = getPkgDir(pkgName)
+    await run('npx', changelogArgs, { cwd: pkgDir })
     extendCommitHash(`${pkgDir}/CHANGELOG.md`)
 
     // 提交更改
