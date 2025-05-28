@@ -1,3 +1,4 @@
-import { publish } from '@vitejs/release-scripts'
+import { publish } from './release-scripts'
+import { getPkgDir } from './releaseUtils'
 
-publish({ defaultPackage: 'vite', provenance: true, packageManager: 'pnpm' })
+publish({ getPkgDir, packageManager: 'pnpm' })

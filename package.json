@@ -34,7 +34,7 @@
     "build": "pnpm -r --filter='./packages/*' run build",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "release": "tsx scripts/release.ts",
-    "publish": "tsx scripts/publish.ts"
+    "pub": "tsx scripts/publish.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
@@ -60,6 +60,7 @@
     "execa": "^9.5.3",
     "globals": "^16.2.0",
     "lint-staged": "^16.0.0",
+    "mri": "^1.2.0",
     "picocolors": "^1.1.1",
     "playwright-chromium": "^1.50.1",
     "prettier": "3.5.3",
