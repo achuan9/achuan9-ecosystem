@@ -1,0 +1,6 @@
+packages:
+  - 'packages/vite-plugins/*'
+  - 'packages/vue-composables/*'
+  - 'playground/**'
+  - 'packages/**/__tests__/**'
+  - docs
