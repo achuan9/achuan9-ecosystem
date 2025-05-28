@@ -119,13 +119,7 @@ export const release: typeof def = async ({
   if (isDryRun) {
     console.log(`\nDry run finished - run git diff to see package changes.`)
   } else {
-    console.log(
-      colors.green(
-        `
-Pushed, publishing should starts shortly on CI.
-https://github.com/vitejs/${repo}/actions/workflows/publish.yml`,
-      ),
-    )
+    console.log(colors.green(`Pushed`))
   }
 
   console.log()
